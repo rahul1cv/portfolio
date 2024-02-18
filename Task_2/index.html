@@ -1,0 +1,189 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <link
+    href="https://cdn.jsdelivr.net/npm/remixicon@3.2.0/fonts/remixicon.css"
+    rel="stylesheet"
+  />
+  <link rel="stylesheet" href="styles.css" />
+  <style>
+    /* Add custom CSS styles for the educational background */
+    #about .section__container .content ul {
+      list-style-type: none;
+      padding: 0;
+    }
+    #about .section__container .content ul li {
+      margin-bottom: 10px;
+      padding: 10px;
+      background-color: #f4f4f4;
+      border-radius: 5px;
+      box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+    }
+    #about .section__container .content ul li:last-child {
+      margin-bottom: 0;
+    }
+
+    /* Add custom CSS styles for the project section */
+    #projects .section__container .content ul {
+      padding: 0; /* Reset padding */
+    }
+    #projects .section__container .content ul li {
+      margin-bottom: 30px; /* Increase gap between projects */
+      width: calc(100% / 3); /* Make each project take up one-third of the window width */
+      float: left; /* Float projects to the left */
+      clear: none; /* Clear floating to prevent layout issues */
+    }
+    #projects .section__container .content ul li h3 {
+      margin-bottom: 10px; /* Add spacing below project headings */
+    }
+    #projects .section__container .content ul li ul {
+      display: none; /* Hide bullet points */
+    }
+
+    /* Add custom CSS styles for the contact form */
+    .contact-form {
+      max-width: 600px;
+      margin: 0 auto;
+    }
+    .contact-form label {
+      display: block;
+      margin-bottom: 10px;
+    }
+    .contact-form input,
+    .contact-form textarea {
+      width: 100%;
+      padding: 8px;
+      margin-bottom: 20px;
+      border: 1px solid #ccc;
+      border-radius: 5px;
+    }
+    .contact-form button {
+      padding: 10px 20px;
+      background-color: #007bff;
+      color: #fff;
+      border: none;
+      border-radius: 5px;
+      cursor: pointer;
+    }
+  </style>
+  <title>Responsive Portfolio</title>
+</head>
+<body>
+  <nav>
+    <div class="nav__content">
+      <div class="logo"><a href="#">Rahul</a></div>
+      <label for="check" class="checkbox">
+        <i class="ri-menu-line"></i>
+      </label>
+      <input type="checkbox" name="check" id="check" />
+      <ul>
+        <li><a href="#home">Home</a></li>
+        <li><a href="#about">About</a></li>
+        <li><a href="#projects">Projects</a></li>
+        <li><a href="#courses">Courses</a></li>
+        <li><a href="#contact">Contact</a></li>
+      </ul>
+    </div>
+  </nav>
+  <section id="home" class="section">
+    <div class="section__container">
+      <div class="content">
+        <p class="subtitle">HELLO</p>
+        <h1 class="title">
+          I'm <span>Rahul C V<br /></span> This is my Personal Portfolio
+        </h1>
+        <p class="description">
+          Welcome to my portfolio! I'm Rahul, an enthusiastic Electronics and Communication Engineer passionate about creating innovative solutions through the power of technology.
+          I possess the skills and drive to tackle challenging projects and contribute meaningfully to the field. This portfolio showcases my diverse skillset, academic achievements, and real-world projects, highlighting my potential to excel in various engineering endeavors.
+        </p>
+        <div class="action__btns">
+          <button class="hire__me">Hire Me</button>
+          <button class="portfolio">Portfolio</button>
+        </div>
+      </div>
+      <div class="image">
+        <img src="assets/profile.jpeg" alt="profile" />
+      </div>
+    </div>
+  </section>
+  <section id="projects" class="section">
+    <div class="section__container">
+      <div class="content">
+        <ul>
+          <li>
+            <h3>SMOKE DETECTION SYSTEM</h3>
+            <p>Developed smoke detection system using Arduino Uno and Gas sensor.</p>
+            <!-- Add more project details if needed -->
+          </li>
+          <li>
+            <h3>AUTOMATIC ROAD ACCIDENT PREVENTION AND DETECTION SYSTEM</h3>
+            <p>Automatic road accident prevention and detection system is an Arduino Uno based project developed to reduce road accidents by prevention and detection. The system detects accidents and sends a message with the location of the accident in a very short time, increasing the chance of saving the victim's life. Accident prevention using ultrasonic sensor and also using temperature and tilt sensors.</p>
+            <!-- Add more project details if needed -->
+          </li>
+          <li>
+            <h3>AI Helmet for mining workers.</h3>
+            <p>This is the project I am currently working with. It's basically a helmet equipped with different sensors and hand gesture detection to evaluate the mining conditions and act accordingly.</p>
+            <!-- Add more project details if needed -->
+          </li>
+          <!-- Add more projects as needed -->
+        </ul>
+      </div>
+    </div>
+  </section>
+  <section id="about" class="section">
+    <div class="section__container">
+      <div class="content">
+        <h2>About Me</h2>
+        <p>Diligent college student focused on Electronics and Communication engineering and dedication to prompt project completion and continual adaptation. Team-oriented collaborator with reliability and focus on equitable task distribution through group projects and motivation to accomplish mutually held goals.</p>
+        <h3>Educational Background</h3>
+        <ul>
+          <li>Bachelor's Degree in Electronics and Communication Engineering - Rajiv Gandhi Institute of Technology Kottayam (2024)</li>
+          <li>High Secondary in Computer science - St. Joseph's HSS Pavaratty (2019)</li>
+          <li>High School - St. Joseph's HSS Pavaratty (2017)</li>
+          <!-- Add more educational backgrounds as needed -->
+        </ul>
+      </div>
+    </div>
+  </section>
+  <section id="courses" class="section">
+    <div class="section__container">
+      <div class="content">
+        <h2>Courses</h2>
+        <h3>Electronics and Communication:</h3>
+        <ul>
+          <li>Im a Electronics and Communication student at Rajiv GandHI Institute of Technology Kottayam</li>
+        </ul>
+        <h3>Coursera Courses:</h3>
+        <ul>
+          <li>Python for Everybody-This is a python course offered my coursera</li>
+        </ul>
+      </div>
+    </div>
+  </section>
+  <section id="contact" class="section">
+    <div class="section__container">
+      <div class="content">
+        <h2>Contact Me</h2>
+        <form class="contact-form">
+          <label for="name">Name:</label>
+          <input type="text" id="name" name="name" required>
+
+          <label for="email">Email:</label>
+          <input type="email" id="email" name="email" required>
+
+          <label for="subject">Subject:</label>
+          <input type="text" id="subject" name="subject" required>
+
+          <label for="message">Message:</label>
+          <textarea id="message" name="message" rows="4" required></textarea>
+
+          <button type="submit">Submit</button>
+        </form>
+      </div>
+    </div>
+  </section>
+</body>
+</html>
